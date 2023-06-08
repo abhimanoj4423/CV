@@ -1,0 +1,94 @@
+---
+surname: Abhijith Manoj
+position: "Data Analyst"
+profilepic: abhi.jpeg
+address: "Ernakulam Kerala"
+phone: +91 8921797916
+email: abhijithmanojedappattu@gmail.com
+github: abhimanoj4423
+linkedin: abhijith-m-linkdin
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: An Electrical & Electronics Engineering graduate with exceptional problem solving ability, Cyber security knowledge and effective communication skills, transitioning from a solar project engineer role and seeking full time job in the field of Data analytics. Proficient in effective oral and written communication, MS Excel, SQL, R Programming, Power BI and Python libraries such as Pandas, NumPy and Matplotlib.
+output: 
+  vitae::awesomecv:
+    page_total: true
+---
+```{r setup, include=FALSE,result= 'asis'}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+# Skills
+```{r SKILLS}
+library(tibble)
+tribble(
+  ~year,~area, ~skills,
+  "","Programming Languages", " BigQuery , MySQL , R , Python ",
+  "","Microsoft Office", " Excel , PowerPoint , Power BI , Word ",
+  "","Organizational Skills", " Data Analytics , Project management , Risk management , Documentation , Adaptability , Presentation ",
+  "","Interpersonal Skills"," Collaboration , Oral communication , Written communication , Relationship building "
+  ) %>%
+  detailed_entries(skills,year,area
+  )
+
+```
+# Certificates
+```{r Certifications}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Google Data Analytics Professional Certificate", "2022-23", "Coursera", "",
+"Applied Data Science with Python","2023", "Simplilearn", ""
+) %>% 
+  detailed_entries(Institution, Where, Degree,Year )
+```
+
+# Portfolio Projects
+```{r Projects}
+library(tibble)
+tribble(
+  ~ Project, ~ Tools, ~ Desc, ~ Where,
+  "1. Premier League Title predictions 2022-23", "MS Excel, R, R Markdown, Power BI", " A Predictive analytics project to forecast the league standings in the Premier League, using forecasting methods to predict the results of 127 matches from Matchday 27 to 38.", "",
+"2. Data Cleaning Project - Housing Data ","Excel, MySQL","Data cleaning project to Standardize data formats, Eliminate and Populate null values, Improve data readability and Ensure consistency and accuracy.","",
+"3. Exploratory Data Analysis project","Excel, Bigquery", "An Exploratory data analysis project which deals with the exploration and manipulation of World covid and vaccination data from January 2020 till November 2022 using Bigquery.", "",
+) %>% 
+  detailed_entries(Desc, Where, Project,Tools )
+```
+Click here : [**Github**](https://github.com/abhimanoj4423?tab=repositories)
+
+# Work Experience
+* **Project Engineer**
+* [*Solar Master*](http://www.solarmaster.in/)
+* `09/2021 - 12/2022`
+    + Managed and supervised all aspects of project planning, scheduling and resource allocation.
+    + Prepared impactful presentations, technical documentations and progress reports for stakeholders.
+    + Monitored and ensured compliance with legal regulatory requirements and industry standards.
+    + Resolved telephonic or in-person client queries on technical aspects, progress and timeline of a project along with providing support, building a better relationship with the client.
+    + Communicated and collaborated with various stakeholders like, the clients, senior members and cross-functional teams to meet timelines and ensure successful project outcomes.
+    
+\pagebreak    
+    
+# Education
+```{r Education}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Electrical and Electronics Engineering (EEE) - 65 %", "2017 - 2021", "Adi Shankara Institute of Engineering and Technology, Kalady - Kerala (KTU)", "Bachelor of Technology",
+"Computer Science - 70 %","2015 - 2017", "St. Peter's Senior Secondary School, Kadayiruppu - Kerala", "Grade 12",
+"Grade 10 - 84 %","2015","St. Peter's Senior Secondary School, Kadayiruppu - Kerala","",
+) %>% 
+  detailed_entries(Institution, Where, Degree,Year )
+```
+
+# Languages
+
+```{r Languages}
+tribble(
+  ~Year, ~Type, ~Desc,
+   "","English", "Full Professional Proficiency","",
+   "Malayalam", "Native or Bilingual Proficiency","",
+   "Hindi","Limited Working Proficiency"
+   
+) %>% 
+  detailed_entries( Desc , Year, Type
+  )
+```
